@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" class="flex items-center">
                 <img src="../static/img/logo_white_long.png" class="mr-3 h-6 sm:h-10" alt="iCake Logo">
@@ -44,9 +44,9 @@
                             un pastel</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="../src/login.html"
                             class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Iniciar
-                            Sesión</a>
+                            sesión</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +70,7 @@
         </ul>
     </div>
     <div id="myTabContent">
-        <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <div class="p-4 bg-gray-50 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
             <div class="flex justify-center mb-6">
                 <img src="../static/img/cakes/coffee.jpg" class="w-80 h-auto rounded-full" alt="coffee" />
             </div>
@@ -127,55 +127,65 @@
                 </a>
             </div>
         </div>
-        <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800 h-screen" id="address" role="tabpanel"
+        <div class="hidden p-4 bg-gray-50 dark:bg-gray-800 h-screen" id="address" role="tabpanel"
             aria-labelledby="address-tab">
             <div class="flex justify-center mb-6">
                 <img src="../static/img/icons/map_white.png"
-                    class="px-2 object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                    class="px-2 object-cover w-full h-48 rounded-t-lg md:h-auto md:w-32 md:rounded-none md:rounded-l-lg"
                     alt="map" />
             </div>
-            <p class="text-xl font-light leading-relaxed mt-6 mb-4 dark:text-gray-400">
-                Vasco de Quiroga 3200, Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX
+            <p class="text-xl text-center font-light leading-relaxed mt-6 mb-4 dark:text-gray-400">
+                Vasco de Quiroga 3200, Santa Fe, Zedec Sta Fé, Álvaro Obregón, 01219 Ciudad de México, CDMX <br>
+                Horario de atención:                
             </p>
-            <div class="flex flex-col">
-                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
-                        <div class="overflow-hidden shadow-md sm:rounded-lg">
-                            <table class="min-w-full">
-                                <thead class="bg-gray-50 dark:bg-gray-700">
-                                    <tr>
-                                        <th scope="col"
-                                            class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Teléfono
-                                        </th>
-                                        <th scope="col"
-                                            class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
-                                            Correo electrónico
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                        <td
-                                            class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            555-555-5555
-                                        </td>
-                                        <td
-                                            class="py-4 px-6 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
-                                            contacto@icake.com
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <section class="flex justify-center">
+                <ul class="w-64 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                    <li class="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 dark:border-gray-600">Lunes a viernes - 08:00 a 17:00hrs.</li>
+                    <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Sábados - 08:00 a 14:00hrs.</li>
+                    <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Domingo cerrado</li>
+                </ul>
+            </section>
+            <section class="flex justify-center">
+                <div class="flex flex-col w-90">
+                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+                            <div class="overflow-hidden shadow-md sm:rounded-lg">
+                                <table class="min-w-full">
+                                    <thead class="bg-gray-50 dark:bg-gray-700">
+                                        <tr>
+                                            <th scope="col"
+                                                class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                                Teléfono
+                                            </th>
+                                            <th scope="col"
+                                                class="py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                                Correo electrónico
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+    
+                                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                            <td
+                                                class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                555-555-5555
+                                            </td>
+                                            <td
+                                                class="py-4 px-6 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                contacto@icake.com
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </body>
-<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+<footer class="p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#"
         class="hover:underline">iCake</a>.
     </span>
