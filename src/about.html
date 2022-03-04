@@ -14,7 +14,8 @@
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" class="flex items-center">
-                <img src="../static/img/logo_white_long.png" class="mr-3 h-6 sm:h-10" alt="iCake Logo">
+                <img src="../static/img/logo_white_long.png" class="hidden mr-3 h-6 sm:h-10 dark:block" alt="iCake Logo">
+                <img src="../static/img/logo_black_long.png" class="mr-3 h-6 sm:h-10 dark:hidden" alt="iCake Logo">
             </a>
             <button data-collapse-toggle="mobile-menu" type="button"
                 class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -72,10 +73,10 @@
     <div id="myTabContent">
         <div class="p-4 bg-gray-50 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
             <div class="flex justify-center mb-6">
-                <img src="../static/img/cakes/coffee.jpg" class="w-80 h-auto rounded-full" alt="coffee" />
+                <img src="../static/img/cakes/coffee.jpg" class="w-40 lg:w-60 h-auto rounded-full" alt="coffee" />
             </div>
-            <p class="text-xl font-light leading-relaxed mt-6 mb-4 dark:text-gray-400">
-                Somos una empresa fundada en el 2022, iniciamos operaciones el día 18 de febrero con el apoyo de
+            <p class="text-xl text-justify font-light leading-relaxed mt-6 mb-4 dark:text-gray-400">
+                Somos una empresa fundada en el año 2022, iniciamos operaciones el día 18 de febrero con el apoyo de
                 Microsoft y Launch X. Una travesía en la cual nos decidimos
                 a llegar a ser tu primer opción para disfrutar de una rebanada de pastel, para esto nos apegamos a
                 nuestros valores.
@@ -83,10 +84,12 @@
             <div class="flex justify-center mb-6">
                 <a href="#"
                     class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="px-2 object-cover w-full h-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg"
+                    <img class="hidden px-2 object-cover w-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg dark:block"
                         src="../static/img/icons/mision_white.png" alt="">
+                    <img class="px-2 object-cover w-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg dark:hidden"
+                        src="../static/img/icons/mision.png" alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Misión</h5>
+                        <h5 class="mb-2 text-justify text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Misión</h5>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Conseguir que nuestro personal se
                             desarrolle y realice plenamente, que los clientes siempre salgan de nuestros
                             establecimientos con una sonrisa y los mejores productos.</p>
@@ -96,8 +99,10 @@
             <div class="flex justify-center mb-6">
                 <a href="#"
                     class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="px-2 object-cover w-full h-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg"
+                    <img class="hidden px-2 object-cover w-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg dark:block"
                         src="../static/img/icons/vision_white.png" alt="">
+                    <img class="px-2 object-cover w-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg dark:hidden"
+                        src="../static/img/icons/vision.png" alt="" >
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Visión</h5>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Queremos que nuestros clientes no
@@ -109,19 +114,20 @@
             </div>
             <div class="flex justify-center mb-6">
                 <a href="#"
-                    class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="px-2 object-cover w-full h-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg"
+                    class="flex flex-col items-center bg-white rounded-lg border shadow-md w-full md:flex-row md:w-[36rem] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="hidden px-2 object-cover w-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg dark:block"
                         src="../static/img/icons/corazon_white.png" alt="">
+                    <img class="px-2 object-cover w-32 rounded-t-lg md:h-auto md:w-24 md:rounded-none md:rounded-l-lg dark:hidden"
+                        src="../static/img/icons/corazon.png" alt="">
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Valores</h5>
                         <ul
-                            class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-                            <li class="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 dark:border-gray-600">
+                            class="w-80 md:w-96 text-sm font-medium text-gray-900 rounded-lg dark:text-white">
+                            <li class="py-2 px-4 w-full rounded-t-lg">
                                 Innovación</li>
-                            <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Integridad</li>
-                            <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Respeto y
-                                tolerancia</li>
-                            <li class="py-2 px-4 w-full rounded-b-lg">Compromiso y responsabilidad</li>
+                            <li class="py-2 px-4 w-full">Integridad</li>
+                            <li class="py-2 px-4 w-full">Respeto y tolerancia</li>
+                            <li class="py-2 px-4 w-full">Compromiso y responsabilidad</li>
                         </ul>
                     </div>
                 </a>
@@ -131,7 +137,10 @@
             aria-labelledby="address-tab">
             <div class="flex justify-center mb-6">
                 <img src="../static/img/icons/map_white.png"
-                    class="px-2 object-cover w-full h-48 rounded-t-lg md:h-auto md:w-32 md:rounded-none md:rounded-l-lg"
+                    class="hidden px-2 object-cover h-24 rounded-t-lg md:h-auto md:w-32 md:rounded-none md:rounded-l-lg dark:block"
+                    alt="map" />
+                <img src="../static/img/icons/map.png"
+                    class="px-2 object-cover h-24 rounded-t-lg md:h-auto md:w-32 md:rounded-none md:rounded-l-lg dark:hidden"
                     alt="map" />
             </div>
             <p class="text-xl text-center font-light leading-relaxed mt-6 mb-4 dark:text-gray-400">

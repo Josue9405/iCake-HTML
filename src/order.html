@@ -16,7 +16,8 @@
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" class="flex items-center">
-                <img src="../static/img/logo_white_long.png" class="mr-3 h-6 sm:h-10" alt="iCake Logo">
+                <img src="../static/img/logo_white_long.png" class="hidden mr-3 h-6 sm:h-10 dark:block" alt="iCake Logo">
+                <img src="../static/img/logo_black_long.png" class="mr-3 h-6 sm:h-10 dark:hidden" alt="iCake Logo">
             </a>
             <button data-collapse-toggle="mobile-menu" type="button"
                 class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -36,7 +37,7 @@
             <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
-                        <a href="../src/index.html"
+                        <a href="../index.html"
                             class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                             aria-current="page">Inicio</a>
                     </li>
@@ -54,9 +55,9 @@
             </div>
         </div>
     </nav>
-    <!--Menú de navegación-->
-    <div class="flex justify-center p-4 w-full bg-gray-50 dark:bg-gray-800 h-screen" id="orderCake">
-        <form class="max-w-2xl w-2/4">
+    <!--Formulario de Orden-->
+    <div class="flex justify-center p-4 w-full bg-gray-50 dark:bg-gray-800 h-full" id="orderCake">
+        <form class="w-9/12 md:w-3/4 lg:w-2/4">
             <div class="relative z-0 mb-6 w-full group">
                 <input type="text" name="nombreCompleto"
                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -115,10 +116,10 @@
                     </label>
                 </div>
                 <div class="relative z-0 mb-6 w-full group">
-                    <input type="text" name="municipio" id="municipio"
+                    <input type="text" name="municipio" id="estado"
                         class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                         placeholder=" " required="">
-                    <label for="municipio"
+                    <label for="estado"
                         class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                         Estado
                     </label>
@@ -136,7 +137,7 @@
                     <option id="customCake" value="custom">Personalizado</option>
                 </select>
             </div>
-            <div id="pastelPersonalizado" class="grid xl:grid-cols-3 xl:gap-6" style="display:none;">
+            <div id="pastelPersonalizado" class="hidden xl:grid-cols-3 xl:gap-6">
                 <div class="relative z-0 mb-6 w-full group">
                     <label for="cubierta" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
                         Cubierta
